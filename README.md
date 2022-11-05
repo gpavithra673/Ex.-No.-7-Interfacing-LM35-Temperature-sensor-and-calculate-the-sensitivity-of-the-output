@@ -191,8 +191,29 @@ Low-Impedance Output, 0.1 Ω for 1-mA Load
 
 Figure -08 Circuit diagram of interfacing an LM35  with ADC input pin 
 
-## Kiel - Program 
- 
+## Kiel - Program :
+~~~
+#include<lpc214x.h>
+#include "LCD.h"
+#include "ADC.h"
+int main()
+{
+	IO1DIR=0xffffffff;
+	IO0DIR=0x00000000;
+	PINSEL0=0x0300;
+	VPBDIV=0x02;
+	lcd_init();
+	show(" ADC Value: ");
+	while(1){
+		cmd(0x8b);
+		val=adc(0,6);
+		dat((val/1000)+48);
+		dat(((val/100)%10)+48);
+		dat(((val/10)%10)+48);
+		dat((val%10)+48);
+	}
+}
+~~~
 ## Tabulations and graph 
 Calculation of sensitivity 
 % of sensitivity is   S=  (T2-T1)/(A2-A1)*100
