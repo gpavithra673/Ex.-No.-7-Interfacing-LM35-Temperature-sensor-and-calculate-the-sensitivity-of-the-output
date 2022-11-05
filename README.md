@@ -2,7 +2,7 @@
 
 
 ### Ex. No. :7
-## Date: 
+## Date: 05.11.2022
 ### Interfacing LM35 Temperature sensor and calculate the sensitivity of the output
 
 ## Aim: 
@@ -201,16 +201,16 @@ Calculation of sensitivity
 
 
 SL NO	Temperature value in °C (T)	ADC VALUE (A)	Sensitivity 
-1			-
-2			
-3			
-4			
-5			
-6			
-7			
-8			
-9			
-10			
+1			       10                        31           32.25
+2			       20                        62           32.25
+3			       30                        94           32.25
+4			       40                        125          32.25
+5			       50                        156          32.25
+6			       60                        187          32.25
+7			       70                        218          32.25
+8			       80                        249          32.25
+9			       90                        280          32.25
+10		       100                       311          32.25
 
 
  
@@ -221,6 +221,9 @@ Figure -09 graph between temperature values and ADC output
 Temperature sensor LM35 is interfaced to LPC2148 and its output is measured 
 
 ## Output screen shots :
+![Screenshot (363)](https://user-images.githubusercontent.com/93427264/200112375-accc8d1d-4ced-45fd-87e9-07329e8a4371.png)
+![Screenshot (364)](https://user-images.githubusercontent.com/93427264/200112391-7bc6b919-a43c-4039-b60c-2157164c6ac1.png)
+![Screenshot (365)](https://user-images.githubusercontent.com/93427264/200112443-fc5e0a97-bec6-4740-8345-3615732796c3.png)
 
 
 
